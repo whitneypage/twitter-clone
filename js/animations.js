@@ -4,6 +4,7 @@ $(document).ready(function() {
 	$('#char-count').hide();
 	$('#tweet-submit').hide();
 	$('.tweet-actions').hide();
+	$('.stats').hide();
 
 
 	$('.tweet-compose').focus(function() {
@@ -63,9 +64,11 @@ $(document).ready(function() {
      	$(this).find($('.tweet-actions')).hide();
      })
  
-
      
      
+     $('.tweet').click(function() {
+     	$(this).find($('.stats')).show();
+     })
 
 
 
